@@ -1,13 +1,9 @@
-import Todo from './components/todo';
-import TodoForm from './components/todoForm';
+import TodoList from './components/todoList';
 
 function App() {
   return (
-    <div className="d-flex justify-content-center p-2">
-      <div className="d-flex flex-column w-25 mt-5">
-        <TodoForm />
-        <Todo />
-      </div>
+    <div>
+      <TodoList />
     </div>
   );
 }

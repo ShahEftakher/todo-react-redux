@@ -1,6 +1,6 @@
 import { ADD_TODO } from '../constants/index';
 
-export default function addTodo(todo) {
+export function addTodo(todo) {
   const payload = {
     text: todo,
     isComplete: false,
