@@ -12,8 +12,7 @@ function TodoList({ todos }) {
           return (
             <Todo
               key={todo.text + Math.ceil(Math.random() * 100).toString()}
-              text={todo.text}
-              isComplete={todo.isComplete}
+              todo={todo}
             />
           );
         })}

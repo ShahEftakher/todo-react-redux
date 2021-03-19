@@ -1,12 +1,5 @@
 import { ADD_TODO } from '../constants';
-
-const getTodos = () => {
-  const todos = JSON.parse(localStorage.getItem('todos'));
-  if (todos) {
-    return todos;
-  }
-  return [];
-};
+import { getTodos } from '../util/getTodo';
 
 const initialState = {
   todos: getTodos(),
